@@ -29,6 +29,9 @@ public:
 	bool operator<= (const process& other) {
 		return (this->arrival < other.arrival);
 	}
+	void decreament() {
+		burstTime--;
+	}
 	void print() {
 		cout << "ID: " << id << endl;
 		cout << "burst time: " << burstTime << "  arrival time: " << arrival << endl;
